@@ -80,13 +80,10 @@
           const titleElement = document.createElement("h3");
           titleElement.textContent = infoBox.heading;
 
-          const imgElement = document.createElement("img");
-          imgElement.src = `images/${infoBox.thumbnail}`;
-
           const textElement = document.createElement("p");
           textElement.textContent = infoBox.description;
 
-          selected.appendChild(imgElement);
+          
           selected.appendChild(titleElement);
           selected.appendChild(textElement);
         });
