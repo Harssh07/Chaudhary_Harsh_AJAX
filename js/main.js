@@ -71,23 +71,8 @@
   }
 
   function loadInfoBoxes() {
-    //make AJAX call here
+   
 
-    //   infoBoxes.forEach((infoBox, index) => {
-    //     let selected = document.querySelector(`#hotspot-${index+1}`);
-
-    //     const titleElement = document.createElement('h2');
-    //     titleElement.textContent = infoBox.title;
-
-    //     const textElement = document.createElement('p');
-    //     textElement.textContent = infoBox.text;
-
-    //     selected.appendChild(titleElement);
-    //     selected.appendChild(textElement);
-    //   });
-    // }
-
-    // SIDHU MOOSA
     fetch("https://swiftpixel.com/earbud/api/infoboxes")
       .then((response) => response.json())
       .then((infoBoxes) => {
@@ -115,22 +100,12 @@
 
   loadInfoBoxes();
 
-  // function showInfo() {
-  //   let selected = document.querySelector(`#${this.slot}`);
-  //   gsap.to(selected, 1, { autoAlpha: 1 });
-  // }
-
-  // function hideInfo() {
-  //   let selected = document.querySelector(`#${this.slot}`);
-  //   gsap.to(selected, 1, { autoAlpha: 0 });
-  // }
-
-  // materials-sidhumoosewala
+  
   function loadMaterialInfo() {
     // AJAX CALL
     // https://swiftpixel.com/earbud/api/materials"
 
-    // take every entry in the materialListData then put it in the material li
+    
     materialListData.forEach((material) => {
       // clone the template - copy of the template
       const clone = materialTemplate.content.cloneNode(true);
@@ -143,7 +118,7 @@
       const materialDescription = clone.querySelector(".material-description");
       materialDescription.textContent = material.description;
 
-      // now adding back to the list
+      
       // append the populated template to the list
       materialList.appendChild(clone);
     });
@@ -169,38 +144,7 @@
   });
 })();
 
-//  jera fetch ala akshpreet
-// document.addEventListener("DOMContentLoaded", function () {
-//   fetchData();
-// });
 
-// function fetchData() {
-//   fetch("https://swiftpixel.com/earbud/api/infoboxes/")
-//     .then((response) => response.json())
-//     .then((data) => displayData(data))
-//     .catch((error) => console.error("Error fetching data:", error));
-// }
-
-// function displayData(data) {
-//   console.log(data);
-
-//   if (Array.isArray(data)) {
-//     const listContainer = document.getElementById("jsonList");
-
-//     data.forEach((item) => {
-//       const listItem = document.createElement("div");
-//       listItem.innerHTML = `
-//               <h2>${item.heading}</h2>
-//               <p>${item.description}</p>
-//               <img src="images/${item.thumbnail}" alt="${item.heading}" style="max-width: 100px; height: auto;">
-//           `;
-
-//       listContainer.appendChild(listItem);
-//     });
-//   } else {
-//     console.error("Invalid data format. Expected an array.");
-//   }
-// }
 
 // spinner
 document.addEventListener("DOMContentLoaded", function () {
