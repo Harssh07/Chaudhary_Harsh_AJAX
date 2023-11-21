@@ -142,8 +142,6 @@
   });
 })();
 
-
-
 // spinner
 document.addEventListener("DOMContentLoaded", function () {
   // Show the spinner on page load
