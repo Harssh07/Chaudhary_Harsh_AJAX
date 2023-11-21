@@ -6,8 +6,6 @@
   const materialTemplate = document.querySelector("#material-template");
   const materialList = document.querySelector("#material-list");
 
- 
-
   const infoBoxes = [
     {
       title: "Noise-cancelling microphones",
@@ -35,29 +33,29 @@
 
   const materialListData = [
     {
-      heading: "Precision-Crafted Polymers",
+      heading: "Charging pod",
       description:
-        "Our earbuds are meticulously molded from high-quality plastics, ensuring a blend of elegance, comfort, and resilience that's second to none.",
+      "Charge for 10 min and use for 10 hrs",
     },
     {
-      heading: "Luxurious Silicone Harmony",
+      heading: "Volume up Button",
       description:
-        "Our uniquely engineered ear tips are cocooned in plush silicone, delivering an opulent embrace for your ears, ensuring an unrivaled fit and exquisite audio experience.",
+      "Press once to increase volume and and press twice to receive incoming call",
     },
     {
-      heading: "Rubberized Cables",
+      heading: "Volume down Button",
       description:
-        "Experience the unparalleled freedom of movement with our flexible rubber cables that promise durability without compromise.",
+      "Press once to decrease volume",
     },
     {
-      heading: "Enhanced Comfort Sensors",
+      heading: "Sweat-free eartips",
       description:
-        "A touch of magic in the form of built-in microphones and sensors empowers your earbuds to obey your every command, making your audio journey seamless and enchanting.",
+      "Sweat free eartips for all usage",
     },
     {
-      heading: "Artistic Mesh Guard",
+      heading: "Glossy-finish body",
       description:
-        "Shielded by artful mesh screens, our speakers remain untarnished, keeping your listening experience pristine.",
+      "Glossy finishing, which looks nice and smooth",
     },
   ];
 
@@ -141,6 +139,7 @@
     hotspot.addEventListener("mouseleave", hideInfo);
   });
 })();
+
 
 // spinner
 document.addEventListener("DOMContentLoaded", function () {
