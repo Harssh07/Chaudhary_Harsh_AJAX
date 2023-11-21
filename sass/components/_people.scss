@@ -1,0 +1,28 @@
+
+#people-con h2 {
+    margin-bottom: 40px;
+  }
+  
+  #people-con ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  #people-con ul li {
+    padding: 20px;
+  }
+  
+  #people-con ul li:nth-child(odd) {
+    background-color: #efe;
+  }
+  
+  #people-con ul li img {
+    float: left;
+    margin-right: 20px;
+  }
+  
+  #people-con svg {
+    max-width: 100px;
+  }
+  
