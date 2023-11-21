@@ -2,12 +2,11 @@
   //variables
   const model = document.querySelector("#model");
   const hotspots = document.querySelectorAll(".Hotspot");
-  // materials by ekam
+  
   const materialTemplate = document.querySelector("#material-template");
   const materialList = document.querySelector("#material-list");
 
-  //This information needs to be removed then pulled with an AJAX Call using the Fetch API
-  //this is the api url https://swiftpixel.com/earbud/api/infoboxes"
+ 
 
   const infoBoxes = [
     {
@@ -32,8 +31,7 @@
     },
   ];
 
-  //This information needs to be removed then pulled with an AJAX Call using the Fetch API
-  //this is the api url https://swiftpixel.com/earbud/api/materials"
+
 
   const materialListData = [
     {
@@ -103,7 +101,7 @@
   
   function loadMaterialInfo() {
     // AJAX CALL
-    // https://swiftpixel.com/earbud/api/materials"
+    
 
     
     materialListData.forEach((material) => {
